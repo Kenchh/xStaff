@@ -1,0 +1,11 @@
+name: xStaff
+author: FreakzBoy
+version: 1.0
+
+main: com.teamxserver.main.xStaff
+
+commands:
+  hostevent:
+    description: Command for staff members to host special events
+  staff:
+    description: Main staff command
