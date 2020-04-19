@@ -171,6 +171,15 @@ public class EggHunt extends StaffEvent {
             }
 
             String[] cordsstring = locstring.split("-");
+
+            for(int i = 0; i<= cordsstring.length - 1; i++) {
+
+                if (cordsstring[i].isEmpty()) {
+                    cordsstring[i] = "-" + cordsstring[i+1];
+                    i++;
+                }
+            }
+
             Location loc = new Location(player.getWorld(), Double.parseDouble(cordsstring[0]), Double.parseDouble(cordsstring[1]), Double.parseDouble(cordsstring[2]));
             if(EggHuntConfig.isEgg(loc)) {
                 locs.add(loc);

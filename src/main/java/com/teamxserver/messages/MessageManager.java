@@ -12,7 +12,7 @@ public class MessageManager {
         addDefaultMessage("prefix", ChatColor.DARK_AQUA + "Staff " + ChatColor.GRAY + ">>" + ChatColor.RESET + " ");
         addDefaultMessage("noperm", getMsg("prefix") + ChatColor.RED + "You do not have permission to execute this command.");
 
-
+        addDefaultMessage("staffmode", ChatColor.DARK_RED + "" + ChatColor.BOLD + "STAFF MODE");
 
         /** Staff Events */
         addDefaultMessage("startevent", getMsg("prefix") + ChatColor.GREEN + "You have started event " + ChatColor.BOLD);
